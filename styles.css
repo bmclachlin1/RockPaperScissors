@@ -1,0 +1,32 @@
+body {
+    background: #2662b5
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.playimg {
+    border-radius: 50%;
+    background: white;
+    border: 5px solid black;
+    margin: 0px 20px;
+}
+
+
+#container {
+    border: 5px solid black;
+    background: #4ba127;
+    margin: 25px;
+
+}
+
+#navbar {
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+    margin: 25px 0px;
+}
