@@ -43,10 +43,6 @@ resetBtn.addEventListener("click", function(){
     message.textContent = "Pick your choice of Rock, Paper, or Scissors!";
 })
 
-scoreLimitDsp.addEventListener("click", function(){
-    scoreLimit = scoreLimitDsp.textContent;
-})
-
 rock.addEventListener("click", function(){
     userChoice = choices[0];
     cpuChoice = cpuPick();
