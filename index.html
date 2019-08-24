@@ -1,29 +1,32 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Rock Paper Scissors</title>
   </head>
+  
   <body>
     <div id="container">
         <h1 id="title">Rock Paper Scissors</h1>
-        <h4 id="navbar">Your score : 0 CPU score : 0 Reset</h4>
+        <h4 id="navbar">Your score : <span id="userScore"></span> CPU score : <span id="cpuScore"></span> Score Limit : <span id="limit">5</span></h4>
+        <h4 id="buttons">
+            <span id="btnborder"><button class="btn btn-primary" id="up">Increase Score Limit</button><button class="btn btn-warning" id="down">Decrease Score Limit</button><button class="btn btn-danger" id="reset">Reset</button></span>
+        </h4>
+        <h4 id="msgDisplay"><span id="msg">Pick your choice of Rock, Paper, or Scissors!</span></h4>
         <div class="imgcontainer">
-            <img class="playimg" src="imgs/rock.png">
-            <img class="playimg" src="imgs/paper.png">
-            <img class="playimg" src="imgs/scissors.png">
+            <h4>Rock Paper Scissors</h4>
+            <img class="playimg" id="rock" src="imgs/rock.png">
+            <img class="playimg" id="paper" src="imgs/paper.png">
+            <img class="playimg" id="scissors" src="imgs/scissors.png">
         </div>
-
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
