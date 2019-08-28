@@ -46,7 +46,6 @@ resetBtn.addEventListener("click", function(){
 rock.addEventListener("click", function(){
     userChoice = choices[0];
     cpuChoice = cpuPick();
-    console.log("userChoice: " + userChoice + " cpuChoice: " + cpuChoice);
     determineWinner(userChoice, cpuChoice);
     if(endGame()) {
         displayWinner();
@@ -56,7 +55,6 @@ rock.addEventListener("click", function(){
 paper.addEventListener("click", function(){
     userChoice = choices[1];
     cpuChoice = cpuPick();
-    console.log("userChoice: " + userChoice + " cpuChoice: " + cpuChoice);
     determineWinner(userChoice, cpuChoice);
     if(endGame()) {
         displayWinner();
@@ -66,7 +64,6 @@ paper.addEventListener("click", function(){
 scissors.addEventListener("click", function(){
     userChoice = choices[2];
     cpuChoice = cpuPick();
-    console.log("userChoice: " + userChoice + " cpuChoice: " + cpuChoice);
     determineWinner(userChoice, cpuChoice);
     if(endGame()) {
         displayWinner();
@@ -74,7 +71,7 @@ scissors.addEventListener("click", function(){
 });
 /* Event listeners End */
 
-/*Function declarations start */
+/* Function declarations start */
 function init() {
     userScore = 0;
     cpuScore = 0;
@@ -85,6 +82,7 @@ function init() {
 }
 
 function cpuPick() {
+    //pick random number from 0 to 2
     temp = Math.floor(Math.random() * 3)
     return choices[temp];
 }

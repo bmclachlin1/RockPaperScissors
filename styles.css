@@ -48,5 +48,6 @@ body {
 #btnborder {
     border: 6px solid black;
     border-radius: 10px;
-    padding-bottom: 7px;
+    display: inline-block;
+    margin: 10px auto;
 }
