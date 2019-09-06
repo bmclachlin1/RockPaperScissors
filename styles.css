@@ -1,53 +1,108 @@
 body {
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(15,28,143,1) 100%);
-    text-align: center;
+    background: rgb(238,174,202); 
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(15,28,143,1) 100%); 
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+#flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+#container {
+    border: 5px solid black; 
+    border-radius: 50px; 
+    background: #6b97b0;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h4 {
+    font-size: 30px;
 }
 
 .imgcontainer {
-    text-align: center;
-    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playimg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .playimg {
     border-radius: 50%;
     background: white;
     border: 5px solid black;
-    margin: 0px 20px;
-}
-
-
-#container {
-    border: 5px solid black;
-    border-radius: 50px;
-    background: #6b97b0;
-    margin: 100px;
-    height: 42em;
-    width: 90em;
-    display: inline-block;
+    margin: 10px;
 }
 
 #navbar {
-    text-align: center;
 }
 
 #buttons {
-    text-align: center;
 }
 
 #msgDisplay {
-    text-align: center;
 }
 
 #title {
-    text-align: center;
     margin: 25px 0px;
 }
 
 #btnborder {
-    border: 6px solid black;
-    border-radius: 10px;
-    display: inline-block;
+    border: 3.5px solid black;
+    border-radius: 5px;
     margin: 10px auto;
+}
+
+#inc {
+    color: white;
+    background: green;
+    border: none;
+    border-radius: 2px;
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+}
+
+#dec {
+    color: white;
+    background: blue;
+    border: none;
+    border-radius: 2px;
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+}
+
+#reset {
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 2px;
+    height: 60px;
+    width: 200px;   
+    font-size: 18px;
 }

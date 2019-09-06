@@ -6,25 +6,39 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Rock Paper Scissors</title>
   </head>
   
   <body>
-    <div id="container">
-        <h1 id="title">Rock Paper Scissors</h1>
-        <h4 id="navbar">Your score : <span id="userScore"></span> CPU score : <span id="cpuScore"></span> Score Limit : <span id="limit">5</span></h4>
-        <h4 id="buttons">
-            <span id="btnborder"><button class="btn btn-primary" id="up">Increase Score Limit</button><button class="btn btn-warning" id="down">Decrease Score Limit</button><button class="btn btn-danger" id="reset">Reset</button></span>
-        </h4>
-        <h4 id="msgDisplay"><span id="msg">Pick your choice of Rock, Paper, or Scissors!</span></h4>
-        <div class="imgcontainer">
-            <img class="playimg" id="rock" src="imgs/rock.png">
-            <img class="playimg" id="paper" src="imgs/paper.png">
-            <img class="playimg" id="scissors" src="imgs/scissors.png">
+    <div id="flex-container">
+        <div id="container">
+            <h1 id="title">Let's Play Rock, Paper, Scissors!</h1>
+            <h4 id="navbar">Your score : <span id="userScore"></span> CPU score : <span id="cpuScore"></span> Score Limit : <span id="limit">5</span></h4>
+            <span id="btnborder">
+                <div class="btn">
+                    <button id="inc">Increase Score Limit</button><button id="dec">Decrease Score Limit</button><button id="reset">Reset</button>
+                </div>
+            </span>
+            <h4 id="msgDisplay"><span id="msg">Pick your choice of Rock, Paper, or Scissors!</span></h4>
+            <div class="imgcontainer">
+              <div class="playimg-container">
+                ROCK
+                <img class="playimg" id="rock" src="imgs/rock.png">
+              </div>
+              <div class="playimg-container">
+                PAPER
+                <img class="playimg" id="paper" src="imgs/paper.png">
+              </div>
+              <div class="playimg-container">
+                SCISSORS
+                <img class="playimg" id="scissors" src="imgs/scissors.png">
+              </div>
+            </div>
         </div>
     </div>
+
+
 
     <script src="scripts.js"></script>
   </body>
